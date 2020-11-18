@@ -7,7 +7,7 @@
 ### User Stories
 - As a user, I can see a page with a 3 by 3 grid board game with a question mark in each square.
 - Added a div square with an `id="square"`
-```css
+<!-- ```css
 #square {
     height: 200px;
     width: 200px;
@@ -15,17 +15,29 @@
     text-align: center;
     font-size: 10rem;
 }
+ -->
 
-
-as a user when I click on one of the question marks an alert apperas with the index position of that question mark in
+##as a user when I click on one of the question marks an alert apperas with the index position of that question mark in
 in the array
 - passes inddex to squares
 - called index onClick in squares
-- created a method in app that displays the index of our square 
-
+- created a method in app that displays the index of our square
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
-- As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
-- As a user, if I select the winning square the question mark will become a treasure emoji.
+
+
+## As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.##
+- git checkout -b tree-functionality
+- emoji keyboard: control, command, spacebar
+- set the index to be a tree emoji and set state with the updated value
+- added treasureLocation to our state object
+- componentDidMount to set a random number to treasureLocation
+
+
+##As a user, if I select the winning square the question mark will become a treasure emoji.
+- git checkout -b adding-treasure
+
+
+
 - As a user, if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at 5 and decrements one every time I click on a square that is not the treasure nor the bomb.
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
