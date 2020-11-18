@@ -6,8 +6,22 @@
 
 ### User Stories
 - As a user, I can see a page with a 3 by 3 grid board game with a question mark in each square.
-- Added a 
+- Added a div square with an `id="square"`
+```css
+#square {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 10rem;
+}
 
+
+as a user when I click on one of the question marks an alert apperas with the index position of that question mark in
+in the array
+- passes inddex to squares
+- called index onClick in squares
+- created
 
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
